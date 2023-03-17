@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<%
+ require "date"
+ today = Date.today
+ start_of_month = Date.new(today.year, today.month, 1)
+ end_of_month = (start_of_month >> 1) - 1
+
+ month_name = today.strftime("%B")
+ day_name_pretty = case today.day
+ when 1, 21, 31 then "#{today.day}st"
+ when 2, 22 then "#{today.day}nd"
+ when 3, 23 then "#{today.day}rd"
+ else
+   "#{today.day}th"
+ end
+
+ title_font_size=50
+
+ date_font_size=18
+ date_font_width=28
+ date_font_height=28
+
+ date_grid = [
+   *([nil] * (Date.today.wday - 1)),
+   *(1...(end_of_month.day))
+ ]
+%>
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 480 800"
+width="480"
+height="800"
+shape-rendering="crispEdges"
+>
+
+<style>
+text {
+font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+</style>
+
+<g transform="translate(240 150)">
+<text
+text-anchor="middle"
+font-size="<%= title_font_size %>"
+font-weight="bold"
+>
+<%= month_name %> <%= day_name_pretty %>
+</text>
+</g>
+
+<g transform="translate(150 300)">
+
+<g transform="translate(0 <%= -date_font_height %>)">
+<rect
+x="-10"
+y="-<%= date_font_height * 0.7 %>"
+width="<%= date_font_width * 7 %>"
+height="<%= date_font_height - 2 %>"
+fill="red"
+stroke="none"
+/>
+
+<% %w[S M T W R F S].each_with_index do |day, x| %>
+
+<g transform="translate(<%= x * date_font_width %> 0)">
+<text
+text-anchor="middle"
+font-size="<%= date_font_size %>"
+font-weight="bold"
+fill="white"
+>
+<%= day %></text>
+</g>
+
+<% end %>
+</g>
+
+<% date_grid.each_slice(7).each_with_index do |row, y| %>
+
+<% row.each_with_index do |day, x| %>
+<%
+  next unless day
+  is_today = (today.day == day)
+  colour = is_today ? "red" : "black"
+%>
+
+<g transform="translate(<%= x * date_font_width %> <%= y * date_font_height %>)">
+<text
+text-anchor="middle"
+fill="<%= colour %>"
+font-weight="bold"
+font-size="<%= date_font_size %>"
+>
+<%= day %>
+</text>
+</g>
+
+<% end %>
+<% end %>
+
+</g>
+
+<g transform="translate(50 700)">
+<text x="12.5" text-anchor="left" font-size="12">
+<%= today.to_s %>
+</text>
+</g>
+
+</svg>
