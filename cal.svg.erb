@@ -22,7 +22,7 @@
  date_font_height=28
 
  date_grid = [
-   *([nil] * (Date.today.wday - 1)),
+   *([nil] * (start_of_month.wday)),
    *(1...(end_of_month.day))
  ]
 %>
