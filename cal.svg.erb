@@ -2,6 +2,8 @@
 
 <%
  require "date"
+ require "json"
+
  today = Date.today
  start_of_month = Date.new(today.year, today.month, 1)
  end_of_month = (start_of_month >> 1) - 1
@@ -26,15 +28,7 @@
    *(1...(end_of_month.day))
  ]
 
- events = [
-   ["10:00", "All hands"],
-   ["12:00", "Lunch"],
-   ["12:00", "Lunch"],
-   ["12:00", "Lunch"],
-   ["12:00", "Lunch"],
- ]
-
- # TODO: truncate to 5 events
+ events = JSON.parse(File.read("events.json"))
 %>
 
 <svg

@@ -1,29 +1,93 @@
-require "open-uri"
-require "icalendar"
+# Inspired by https://josh.fail/2022/dump-calendar-app-events-to-json/
 
-urls = File.read("#{ENV['HOME']}/.config/svgcal/urls").lines.map(&:strip)
+require "date"
+require "json"
 
-all_events = []
-urls.each do |url|
-  cal_file = URI.open(url)
-  cals = Icalendar::Calendar.parse(cal_file)
-  p cals.size
-  cal = cals.first
-  all_events.concat cal.events
-  #event = cal.events.first
+ICBPS="#ICALBUDDY-PROPERTY-SEPARATOR#"
+ICBNL="#ICALBUDDY-NEW-LINE#"
+ICBSS="#ICALBUDDY-SECTION-SEPARATOR#"
 
-  #puts "start date-time: #{event.dtstart}"
-  #puts "start date-time timezone: #{event.dtstart.ical_params['tzid']}"
-  #puts "summary: #{event.summary}"
+Event = Struct.new(:title, :datetime, :notes) do
+  def full_day?
+    date_sections[1].nil?
+  end
+
+  def day
+    Date.parse(date_sections[0])
+  end
+
+  def start_time
+    if full_day?
+      day.to_time
+    else
+      DateTime.parse("#{date_sections[0]} #{date_sections[1]}")
+    end
+  end
+
+  def end_time
+    if full_day?
+      (day + 1).to_time
+    else
+      DateTime.parse("#{date_sections[0]} #{date_sections[1]}")
+    end
+  end
+
+  def date_sections
+    datetime =~ /\A(\d\d\d\d-\d\d-\d\d)(?: at (\d\d:\d\d) - (\d\d:\d\d))?\z/
+    [$1, $2, $3]
+  end
+
+  def inspect
+    "#<#{self.class} #{title} #{datetime}>"
+  end
 end
 
-now = Time.now
-cutoff = now + (18 * 60 * 60) # next 18 hours
+def fetch_events
+  start_at = Time.now.to_s
+  hour = 60 * 60
+  end_at = (Time.now + 7 * 24 * hour).to_s
 
-today_events = all_events.select { |event|
- start_time = event.dtstart.to_time.localtime
- finish_time = event.dtend.to_time.localtime
- finish_time > now && start_time < cutoff
-}
+  p start_at
 
-binding.irb
+  output = nil
+
+  cmd = %W[
+  icalBuddy
+  --propertySeparators |#{ICBPS}|
+  --notesNewlineReplacement #{ICBNL}
+  --noRelativeDates
+  --dateFormat %Y-%m-%d
+  --timeFormat %H:%M
+  --bullet #{""}
+  --includeEventProps title,datetime,notes
+  --propertyOrder title,datetime,notes
+  --noPropNames
+  eventsFrom:#{start_at}
+  to:#{end_at}
+  ]
+
+  output = IO.popen(cmd) do |io|
+    io.read
+  end
+
+  data = output.lines(chomp: true).map do |line|
+    title, datetime, notes = line.split(ICBPS)
+    title.gsub!(/ \([^()]*\)\z/, "")
+    notes&.gsub!(ICBNL, "\n")
+
+    Event.new(title, datetime, notes)
+  end
+
+  data
+end
+
+events = fetch_events
+
+upcoming = events.reject(&:full_day?)
+upcoming = upcoming.first(5)
+upcoming.map! { |event| [event.start_time.strftime("%H:%M"), event.title] }
+
+File.write("events.json", JSON.dump(upcoming))
+
+pp upcoming
+

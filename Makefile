@@ -2,7 +2,7 @@ PI=192.168.1.76
 
 all: cal.svg cal.png
 
-cal.svg: cal.svg.erb
+cal.svg: cal.svg.erb events.json
 	@rm -f cal.svg
 	erb < cal.svg.erb > cal.svg
 
