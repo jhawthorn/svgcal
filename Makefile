@@ -13,6 +13,9 @@ cal.png: cal.svg
 clean:
 	$(RM) cal.svg cal.png
 
+update: update_data.rb
+	ruby update_data.rb
+
 upload: cal.png
 	scp cal.png $(PI):
 	ssh $(PI) sudo ruby src/piink/test.rb cal.png

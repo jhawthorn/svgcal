@@ -52,7 +52,7 @@ def fetch_events
   output = nil
 
   cmd = %W[
-  icalBuddy
+  /opt/homebrew/bin/icalbuddy
   --propertySeparators |#{ICBPS}|
   --notesNewlineReplacement #{ICBNL}
   --noRelativeDates
