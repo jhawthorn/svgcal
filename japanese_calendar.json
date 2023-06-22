@@ -1,0 +1,876 @@
+{
+  "microseasons": [
+    {
+      "number": 1,
+      "start_date": "February 4",
+      "end_date": "February 8",
+      "kanji": "東風解凍",
+      "romaji": "Harukaze kōri o toku",
+      "description": "The east wind melts the thick ice.",
+      "solar_term_number": 1
+    },
+    {
+      "number": 2,
+      "start_date": "February 9",
+      "end_date": "February 13",
+      "kanji": "黄鶯睍睆",
+      "romaji": "Kōō kenkan su",
+      "description": "Bush warblers sing in the countryside.",
+      "solar_term_number": 1
+    },
+    {
+      "number": 3,
+      "start_date": "February 14",
+      "end_date": "February 18",
+      "kanji": "魚上氷",
+      "romaji": "Uo kōri o izuru",
+      "description": "Ice cracks, allowing fish to emerge.",
+      "solar_term_number": 1
+    },
+    {
+      "number": 4,
+      "start_date": "February 19",
+      "end_date": "February 23",
+      "kanji": "土脉潤起",
+      "romaji": "Tsuchi no shō uruoi okoru",
+      "description": "Rain falls, moistening the soil.",
+      "solar_term_number": 2
+    },
+    {
+      "number": 5,
+      "start_date": "February 24",
+      "end_date": "February 28",
+      "kanji": "霞始靆",
+      "romaji": "Kasumi hajimete tanabiku",
+      "description": "Mist lies over the land.",
+      "solar_term_number": 2
+    },
+    {
+      "number": 6,
+      "start_date": "March 1",
+      "end_date": "March 5",
+      "kanji": "草木萌動",
+      "romaji": "Sōmoku mebae izuru",
+      "description": "Trees and plants put forth buds.",
+      "solar_term_number": 2
+    },
+    {
+      "number": 7,
+      "start_date": "March 6",
+      "end_date": "March 10",
+      "kanji": "蟄虫啓戸",
+      "romaji": "Sugomori mushito o hiraku",
+      "description": "Hibernating insects emerge.",
+      "solar_term_number": 3
+    },
+    {
+      "number": 8,
+      "start_date": "March 11",
+      "end_date": "March 15",
+      "kanji": "桃始笑",
+      "romaji": "Momo hajimete saku",
+      "description": "Peach trees begin to bloom.",
+      "solar_term_number": 3
+    },
+    {
+      "number": 9,
+      "start_date": "March 16",
+      "end_date": "March 20",
+      "kanji": "菜虫化蝶",
+      "romaji": "Namushi chō to naru",
+      "description": "Cabbage whites emerge from their cocoons.",
+      "solar_term_number": 3
+    },
+    {
+      "number": 10,
+      "start_date": "March 21",
+      "end_date": "March 25",
+      "kanji": "雀始巣",
+      "romaji": "Suzume hajimete sukū",
+      "description": "Sparrows begin building their nests.",
+      "solar_term_number": 4
+    },
+    {
+      "number": 11,
+      "start_date": "March 26",
+      "end_date": "March 30",
+      "kanji": "櫻始開",
+      "romaji": "Sakura hajimete saku",
+      "description": "Cherry blossoms begin to bloom.",
+      "solar_term_number": 4
+    },
+    {
+      "number": 12,
+      "start_date": "March 31",
+      "end_date": "April 4",
+      "kanji": "雷乃発声",
+      "romaji": "Kaminari sunawachi koe o hassu",
+      "description": "Thunder rumbles far away.",
+      "solar_term_number": 4
+    },
+    {
+      "number": 13,
+      "start_date": "April 5",
+      "end_date": "April 9",
+      "kanji": "玄鳥至",
+      "romaji": "Tsubame kitaru",
+      "description": "Swallows return from the south.",
+      "solar_term_number": 5
+    },
+    {
+      "number": 14,
+      "start_date": "April 10",
+      "end_date": "April 14",
+      "kanji": "鴻雁北",
+      "romaji": "Kōgan kaeru",
+      "description": "Wild geese fly north.",
+      "solar_term_number": 5
+    },
+    {
+      "number": 15,
+      "start_date": "April 15",
+      "end_date": "April 19",
+      "kanji": "虹始見",
+      "romaji": "Niji hajimete arawaru",
+      "description": "Rainbows begin to appear.",
+      "solar_term_number": 5
+    },
+    {
+      "number": 16,
+      "start_date": "April 20",
+      "end_date": "April 24",
+      "kanji": "葭始生",
+      "romaji": "Ashi hajimete shōzu",
+      "description": "Reeds begin to sprout.",
+      "solar_term_number": 6
+    },
+    {
+      "number": 17,
+      "start_date": "April 25",
+      "end_date": "April 29",
+      "kanji": "霜止出苗",
+      "romaji": "Shimo yamite nae izuru",
+      "description": "Rice seedlings grow.",
+      "solar_term_number": 6
+    },
+    {
+      "number": 18,
+      "start_date": "April 30",
+      "end_date": "May 4",
+      "kanji": "牡丹華",
+      "romaji": "Botan hana saku",
+      "description": "Peonies bloom.",
+      "solar_term_number": 6
+    },
+    {
+      "number": 19,
+      "start_date": "May 5",
+      "end_date": "May 9",
+      "kanji": "蛙始鳴",
+      "romaji": "Kawazu hajimete naku",
+      "description": "Frogs begin croaking.",
+      "solar_term_number": 7
+    },
+    {
+      "number": 20,
+      "start_date": "May 10",
+      "end_date": "May 14",
+      "kanji": "蚯蚓出",
+      "romaji": "Mimizu izuru",
+      "description": "Worms wriggle to the surface.",
+      "solar_term_number": 7
+    },
+    {
+      "number": 21,
+      "start_date": "May 15",
+      "end_date": "May 20",
+      "kanji": "竹笋生",
+      "romaji": "Takenoko shōzu",
+      "description": "Bamboo shoots sprout.",
+      "solar_term_number": 7
+    },
+    {
+      "number": 22,
+      "start_date": "May 21",
+      "end_date": "May 25",
+      "kanji": "蚕起食桑",
+      "romaji": "Kaiko okite kuwa o hamu",
+      "description": "Silkworms feast on mulberry leaves.",
+      "solar_term_number": 8
+    },
+    {
+      "number": 23,
+      "start_date": "May 26",
+      "end_date": "May 30",
+      "kanji": "紅花栄",
+      "romaji": "Benibana sakau",
+      "description": "Safflowers bloom in abundance.",
+      "solar_term_number": 8
+    },
+    {
+      "number": 24,
+      "start_date": "May 31",
+      "end_date": "June 5",
+      "kanji": "麦秋至",
+      "romaji": "Mugi no toki itaru",
+      "description": "Barley ripens, ready to be harvested.",
+      "solar_term_number": 8
+    },
+    {
+      "number": 25,
+      "start_date": "June 6",
+      "end_date": "June 10",
+      "kanji": "蟷螂生",
+      "romaji": "Kamakiri shōzu",
+      "description": "Praying mantises hatch and come forth.",
+      "solar_term_number": 9
+    },
+    {
+      "number": 26,
+      "start_date": "June 11",
+      "end_date": "June 15",
+      "kanji": "腐草為螢",
+      "romaji": "Kusaretaru kusa hotaru to naru",
+      "description": "Fireflies fly out from moist grass.",
+      "solar_term_number": 9
+    },
+    {
+      "number": 27,
+      "start_date": "June 16",
+      "end_date": "June 20",
+      "kanji": "梅子黄",
+      "romaji": "Ume no mi kibamu",
+      "description": "Plums ripen, turning yellow.",
+      "solar_term_number": 9
+    },
+    {
+      "number": 28,
+      "start_date": "June 21",
+      "end_date": "June 26",
+      "kanji": "乃東枯",
+      "romaji": "Natsukarekusa karuru",
+      "description": "Prunella flowers wither.",
+      "solar_term_number": 10
+    },
+    {
+      "number": 29,
+      "start_date": "June 27",
+      "end_date": "July 1",
+      "kanji": "菖蒲華",
+      "romaji": "Ayame hana saku",
+      "description": "Irises bloom.",
+      "solar_term_number": 10
+    },
+    {
+      "number": 30,
+      "start_date": "July 2",
+      "end_date": "July 6",
+      "kanji": "半夏生",
+      "romaji": "Hange shōzu",
+      "description": "Crowdipper sprouts.",
+      "solar_term_number": 10
+    },
+    {
+      "number": 31,
+      "start_date": "July 7",
+      "end_date": "July 11",
+      "kanji": "温風至",
+      "romaji": "Atsukaze itaru",
+      "description": "Warm winds blow.",
+      "solar_term_number": 11
+    },
+    {
+      "number": 32,
+      "start_date": "July 12",
+      "end_date": "July 16",
+      "kanji": "蓮始開",
+      "romaji": "Hasu hajimete hiraku",
+      "description": "Lotuses begin to bloom.",
+      "solar_term_number": 11
+    },
+    {
+      "number": 33,
+      "start_date": "July 17",
+      "end_date": "July 22",
+      "kanji": "鷹乃学習",
+      "romaji": "Taka sunawachi waza o narau",
+      "description": "Young hawks learn to fly.",
+      "solar_term_number": 11
+    },
+    {
+      "number": 34,
+      "start_date": "July 23",
+      "end_date": "July 28",
+      "kanji": "桐始結花",
+      "romaji": "Kiri hajimete hana o musubu",
+      "description": "Paulownia trees begin to produce seeds.",
+      "solar_term_number": 12
+    },
+    {
+      "number": 35,
+      "start_date": "July 29",
+      "end_date": "August 2",
+      "kanji": "土潤溽暑",
+      "romaji": "Tsuchi uruōte mushi atsushi",
+      "description": "The ground is damp, the air hot and humid.",
+      "solar_term_number": 12
+    },
+    {
+      "number": 36,
+      "start_date": "August 3",
+      "end_date": "August 7",
+      "kanji": "大雨時行",
+      "romaji": "Taiu tokidoki furu",
+      "description": "Heavy rains fall.",
+      "solar_term_number": 12
+    },
+    {
+      "number": 37,
+      "start_date": "August 8",
+      "end_date": "August 12",
+      "kanji": "涼風至",
+      "romaji": "Suzukaze itaru",
+      "description": "Cool winds blow.",
+      "solar_term_number": 13
+    },
+    {
+      "number": 38,
+      "start_date": "August 13",
+      "end_date": "August 17",
+      "kanji": "寒蝉鳴",
+      "romaji": "Higurashi naku",
+      "description": "Evening cicadas begin to sing.",
+      "solar_term_number": 13
+    },
+    {
+      "number": 39,
+      "start_date": "August 18",
+      "end_date": "August 22",
+      "kanji": "蒙霧升降",
+      "romaji": "Fukaki kiri matō",
+      "description": "Thick fog blankets the land.",
+      "solar_term_number": 13
+    },
+    {
+      "number": 40,
+      "start_date": "August 23",
+      "end_date": "August 27",
+      "kanji": "綿柎開",
+      "romaji": "Wata no hana shibe hiraku",
+      "description": "Cotton bolls open.",
+      "solar_term_number": 14
+    },
+    {
+      "number": 41,
+      "start_date": "August 28",
+      "end_date": "September 1",
+      "kanji": "天地始粛",
+      "romaji": "Tenchi hajimete samushi",
+      "description": "The heat finally relents.",
+      "solar_term_number": 14
+    },
+    {
+      "number": 42,
+      "start_date": "September 2",
+      "end_date": "September 7",
+      "kanji": "禾乃登",
+      "romaji": "Kokumono sunawachi minoru",
+      "description": "Rice ripens.",
+      "solar_term_number": 14
+    },
+    {
+      "number": 43,
+      "start_date": "September 8",
+      "end_date": "September 12",
+      "kanji": "草露白",
+      "romaji": "Kusa no tsuyu shiroshi",
+      "description": "White dew shimmers on the grass.",
+      "solar_term_number": 15
+    },
+    {
+      "number": 44,
+      "start_date": "September 13",
+      "end_date": "September 17",
+      "kanji": "鶺鴒鳴",
+      "romaji": "Sekirei naku",
+      "description": "Wagtails begin to sing.",
+      "solar_term_number": 15
+    },
+    {
+      "number": 45,
+      "start_date": "September 18",
+      "end_date": "September 22",
+      "kanji": "玄鳥去",
+      "romaji": "Tsubame saru",
+      "description": "Swallows return to the south.",
+      "solar_term_number": 15
+    },
+    {
+      "number": 46,
+      "start_date": "September 23",
+      "end_date": "September 27",
+      "kanji": "雷乃収声",
+      "romaji": "Kaminari sunawachi koe o osamu",
+      "description": "Thunder comes to an end.",
+      "solar_term_number": 16
+    },
+    {
+      "number": 47,
+      "start_date": "September 28",
+      "end_date": "October 2",
+      "kanji": "蟄虫坏戸",
+      "romaji": "Mushi kakurete to o fusagu",
+      "description": "Insects close up their burrows.",
+      "solar_term_number": 16
+    },
+    {
+      "number": 48,
+      "start_date": "October 3",
+      "end_date": "October 7",
+      "kanji": "水始涸",
+      "romaji": "Mizu hajimete karuru",
+      "description": "Fields are drained of water.",
+      "solar_term_number": 16
+    },
+    {
+      "number": 49,
+      "start_date": "October 8",
+      "end_date": "October 12",
+      "kanji": "鴻雁来",
+      "romaji": "Kōgan kitaru",
+      "description": "Wild geese begin to fly back.",
+      "solar_term_number": 17
+    },
+    {
+      "number": 50,
+      "start_date": "October 13",
+      "end_date": "October 17",
+      "kanji": "菊花開",
+      "romaji": "Kiku no hana hiraku",
+      "description": "Chrysanthemums bloom.",
+      "solar_term_number": 17
+    },
+    {
+      "number": 51,
+      "start_date": "October 18",
+      "end_date": "October 22",
+      "kanji": "蟋蟀在戸",
+      "romaji": "Kirigirisu to ni ari",
+      "description": "Crickets chirp by the door.",
+      "solar_term_number": 17
+    },
+    {
+      "number": 52,
+      "start_date": "October 23",
+      "end_date": "October 27",
+      "kanji": "霜始降",
+      "romaji": "Shimo hajimete furu",
+      "description": "Frost begins to form.",
+      "solar_term_number": 18
+    },
+    {
+      "number": 53,
+      "start_date": "October 28",
+      "end_date": "November 1",
+      "kanji": "霎時施",
+      "romaji": "Kosame tokidoki furu",
+      "description": "Drizzling rain falls gently.",
+      "solar_term_number": 18
+    },
+    {
+      "number": 54,
+      "start_date": "November 2",
+      "end_date": "November 6",
+      "kanji": "楓蔦黄",
+      "romaji": "Momiji tsuta kibamu",
+      "description": "Maple leaves and ivy turn yellow.",
+      "solar_term_number": 18
+    },
+    {
+      "number": 55,
+      "start_date": "November 7",
+      "end_date": "November 11",
+      "kanji": "山茶始開",
+      "romaji": "Tsubaki hajimete hiraku",
+      "description": "Sasanqua camellias begin to bloom.",
+      "solar_term_number": 19
+    },
+    {
+      "number": 56,
+      "start_date": "November 12",
+      "end_date": "November 16",
+      "kanji": "地始凍",
+      "romaji": "Chi hajimete kōru",
+      "description": "The land begins to freeze.",
+      "solar_term_number": 19
+    },
+    {
+      "number": 57,
+      "start_date": "November 17",
+      "end_date": "November 21",
+      "kanji": "金盞香",
+      "romaji": "Kinsenka saku",
+      "description": "Daffodils bloom.",
+      "solar_term_number": 19
+    },
+    {
+      "number": 58,
+      "start_date": "November 22",
+      "end_date": "November 26",
+      "kanji": "虹蔵不見",
+      "romaji": "Niji kakurete miezu",
+      "description": "Rainbows disappear.",
+      "solar_term_number": 20
+    },
+    {
+      "number": 59,
+      "start_date": "November 27",
+      "end_date": "December 1",
+      "kanji": "朔風払葉",
+      "romaji": "Kitakaze konoha o harau",
+      "description": "The north wind blows leaves off the trees.",
+      "solar_term_number": 20
+    },
+    {
+      "number": 60,
+      "start_date": "December 2",
+      "end_date": "December 6",
+      "kanji": "橘始黄",
+      "romaji": "Tachibana hajimete kibamu",
+      "description": "Tachibana citrus trees begin to turn yellow.",
+      "solar_term_number": 20
+    },
+    {
+      "number": 61,
+      "start_date": "December 7",
+      "end_date": "December 11",
+      "kanji": "閉塞成冬",
+      "romaji": "Sora samuku fuyu to naru",
+      "description": "The skies stay cold as winter arrives.",
+      "solar_term_number": 21
+    },
+    {
+      "number": 62,
+      "start_date": "December 12",
+      "end_date": "December 16",
+      "kanji": "熊蟄穴",
+      "romaji": "Kuma ana ni komoru",
+      "description": "Bears hide away in their dens to hibernate.",
+      "solar_term_number": 21
+    },
+    {
+      "number": 63,
+      "start_date": "December 17",
+      "end_date": "December 21",
+      "kanji": "鱖魚群",
+      "romaji": "Sake no uo muragaru",
+      "description": "Salmon swim upstream en masse.",
+      "solar_term_number": 21
+    },
+    {
+      "number": 64,
+      "start_date": "December 22",
+      "end_date": "December 26",
+      "kanji": "乃東生",
+      "romaji": "Natsukarekusa shōzu",
+      "description": "Prunella sprouts.",
+      "solar_term_number": 22
+    },
+    {
+      "number": 65,
+      "start_date": "December 27",
+      "end_date": "December 31",
+      "kanji": "麋角解",
+      "romaji": "Sawashika no tsuno otsuru",
+      "description": "Deer shed their antlers.",
+      "solar_term_number": 22
+    },
+    {
+      "number": 66,
+      "start_date": "January 1",
+      "end_date": "January 4",
+      "kanji": "雪下出麦",
+      "romaji": "Yuki watarite mugi nobiru",
+      "description": "Barley sprouts under the snow.",
+      "solar_term_number": 22
+    },
+    {
+      "number": 67,
+      "start_date": "January 5",
+      "end_date": "January 9",
+      "kanji": "芹乃栄",
+      "romaji": "Seri sunawachi sakau",
+      "description": "Parsley thrives.",
+      "solar_term_number": 23
+    },
+    {
+      "number": 68,
+      "start_date": "January 10",
+      "end_date": "January 14",
+      "kanji": "水泉動",
+      "romaji": "Shimizu atataka o fukumu",
+      "description": "Springs once frozen flow once more.",
+      "solar_term_number": 23
+    },
+    {
+      "number": 69,
+      "start_date": "January 15",
+      "end_date": "January 19",
+      "kanji": "雉始雊",
+      "romaji": "Kiji hajimete naku",
+      "description": "Cock pheasants begin to call.",
+      "solar_term_number": 23
+    },
+    {
+      "number": 70,
+      "start_date": "January 20",
+      "end_date": "January 24",
+      "kanji": "款冬華",
+      "romaji": "Fuki no hana saku",
+      "description": "Butterburs put forth buds.",
+      "solar_term_number": 24
+    },
+    {
+      "number": 71,
+      "start_date": "January 25",
+      "end_date": "January 29",
+      "kanji": "水沢腹堅",
+      "romaji": "Sawamizu kōri tsumeru",
+      "description": "Mountain streams gain a cover of thick ice.",
+      "solar_term_number": 24
+    },
+    {
+      "number": 72,
+      "start_date": "January 30",
+      "end_date": "February 3",
+      "kanji": "鶏始乳",
+      "romaji": "Niwatori hajimete toya ni tsuku",
+      "description": "Hens begin to lay eggs.",
+      "solar_term_number": 24
+    }
+  ],
+  "solar_terms": [
+    {
+      "romaji": "Risshun",
+      "kanji": "立春",
+      "description": "Beginning of Spring",
+      "number": 1,
+      "start_date": "February 4",
+      "end_date": "February 18"
+    },
+    {
+      "romaji": "Usui",
+      "kanji": "雨水",
+      "description": "Rain Water",
+      "number": 2,
+      "start_date": "February 19",
+      "end_date": "March 5"
+    },
+    {
+      "romaji": "Keichitsu",
+      "kanji": "啓蟄",
+      "description": "Insects Awakening",
+      "number": 3,
+      "start_date": "March 6",
+      "end_date": "March 20"
+    },
+    {
+      "romaji": "Shunbun",
+      "kanji": "春分",
+      "description": "Spring Equinox",
+      "number": 4,
+      "start_date": "March 21",
+      "end_date": "April 4"
+    },
+    {
+      "romaji": "Seimei",
+      "kanji": "清明",
+      "description": "Fresh Green",
+      "number": 5,
+      "start_date": "April 5",
+      "end_date": "April 19"
+    },
+    {
+      "romaji": "Kokuu",
+      "kanji": "穀雨",
+      "description": "Grain Rain",
+      "number": 6,
+      "start_date": "April 20",
+      "end_date": "May 4"
+    },
+    {
+      "romaji": "Rikka",
+      "kanji": "立夏",
+      "description": "Beginning of Summer",
+      "number": 7,
+      "start_date": "May 5",
+      "end_date": "May 20"
+    },
+    {
+      "romaji": "Shōman",
+      "kanji": "小満",
+      "description": "Lesser Fullness",
+      "number": 8,
+      "start_date": "May 21",
+      "end_date": "June 5"
+    },
+    {
+      "romaji": "Bōshu",
+      "kanji": "芒種",
+      "description": "Grain in Ear",
+      "number": 9,
+      "start_date": "June 6",
+      "end_date": "June 20"
+    },
+    {
+      "romaji": "Geshi",
+      "kanji": "夏至",
+      "description": "Summer Solstice",
+      "number": 10,
+      "start_date": "June 21",
+      "end_date": "July 6"
+    },
+    {
+      "romaji": "Shōsho",
+      "kanji": "小暑",
+      "description": "Lesser Heat",
+      "number": 11,
+      "start_date": "July 7",
+      "end_date": "July 22"
+    },
+    {
+      "romaji": "Taisho",
+      "kanji": "大暑",
+      "description": "Greater Heat",
+      "number": 12,
+      "start_date": "July 23",
+      "end_date": "August 7"
+    },
+    {
+      "romaji": "Risshū",
+      "kanji": "立秋",
+      "description": "Beginning of Autumn",
+      "number": 13,
+      "start_date": "August 8",
+      "end_date": "August 22"
+    },
+    {
+      "romaji": "Shosho",
+      "kanji": "処暑",
+      "description": "End of Heat",
+      "number": 14,
+      "start_date": "August 23",
+      "end_date": "September 7"
+    },
+    {
+      "romaji": "Hakuro",
+      "kanji": "白露",
+      "description": "White Dew",
+      "number": 15,
+      "start_date": "September 8",
+      "end_date": "September 22"
+    },
+    {
+      "romaji": "Shūbun",
+      "kanji": "秋分",
+      "description": "Autumnal Equinox",
+      "number": 16,
+      "start_date": "September 23",
+      "end_date": "October 7"
+    },
+    {
+      "romaji": "Kanro",
+      "kanji": "寒露",
+      "description": "Cold Dew",
+      "number": 17,
+      "start_date": "October 8",
+      "end_date": "October 22"
+    },
+    {
+      "romaji": "Sōkō",
+      "kanji": "霜降",
+      "description": "First Frost",
+      "number": 18,
+      "start_date": "October 23",
+      "end_date": "November 6"
+    },
+    {
+      "romaji": "Rittō",
+      "kanji": "立冬",
+      "description": "Beginning of Winter",
+      "number": 19,
+      "start_date": "November 7",
+      "end_date": "November 21"
+    },
+    {
+      "romaji": "Shōsetsu",
+      "kanji": "小雪",
+      "description": "Light Snow",
+      "number": 20,
+      "start_date": "November 22",
+      "end_date": "December 6"
+    },
+    {
+      "romaji": "Taisetsu",
+      "kanji": "大雪",
+      "description": "Heavy Snow",
+      "number": 21,
+      "start_date": "December 7",
+      "end_date": "December 21"
+    },
+    {
+      "romaji": "Tōji",
+      "kanji": "冬至",
+      "description": "Winter Solstice",
+      "number": 22,
+      "start_date": "December 22",
+      "end_date": "January 4"
+    },
+    {
+      "romaji": "Shōkan",
+      "kanji": "小寒",
+      "description": "Lesser Cold",
+      "number": 23,
+      "start_date": "January 5",
+      "end_date": "January 19"
+    },
+    {
+      "romaji": "Daikan",
+      "kanji": "大寒",
+      "description": "Greater Cold",
+      "number": 24,
+      "start_date": "January 20",
+      "end_date": "February 3"
+    }
+  ],
+  "seasons": [
+    {
+      "kanji": "春",
+      "romaji": "haru",
+      "start_date": "February 5",
+      "end_date": "May 6",
+      "description": "Spring"
+    },
+    {
+      "kanji": "夏",
+      "romaji": "natsu",
+      "start_date": "May 7",
+      "end_date": "August 8",
+      "description": "Summer"
+    },
+    {
+      "kanji": "秋",
+      "romaji": "aki",
+      "start_date": "August 9",
+      "end_date": "November 7",
+      "description": "Autumn"
+    },
+    {
+      "kanji": "冬",
+      "romaji": "fuyu",
+      "start_date": "November 8",
+      "end_date": "February 4",
+      "description": "Winter"
+    }
+  ]
+}
